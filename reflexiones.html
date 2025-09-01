@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reflexiones</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header>
+    <h1>Reflexiones de Estudiantes</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="consejos.html">Consejos Éticos</a></li>
+        <li><a href="casos.html">Casos de Estudio</a></li>
+        <li><a href="reflexiones.html">Reflexiones</a></li>
+        <li><a href="recursos.html">Recursos</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero hero-reflexiones">
+    <div class="hero-texto">
+      <h2>Tu voz importa</h2>
+      <p>Comparte tu opinión sobre el uso ético de la IA.</p>
+    </div>
+  </section>
+
+  <main>
+    <form id="form-reflexion" class="formulario">
+      <input type="text" id="nombre" placeholder="Nombre" required>
+      <input type="email" id="correo" placeholder="Correo" required>
+      <textarea id="mensaje" placeholder="Escribe tu reflexión" required></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+
+    <h3>Reflexiones recibidas:</h3>
+    <ul id="lista-reflexiones"></ul>
+    <button id="btn-borrar">Borrar mensajes</button>
+  </main>
+
+  <footer>
+    <p>© 2025 Portal Ético de IA</p>
+  </footer>
+</body>
+</html>
