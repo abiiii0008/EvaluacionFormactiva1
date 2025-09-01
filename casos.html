@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Casos de Estudio</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header>
+    <h1>Casos de Estudio</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="consejos.html">Consejos Éticos</a></li>
+        <li><a href="casos.html">Casos de Estudio</a></li>
+        <li><a href="reflexiones.html">Reflexiones</a></li>
+        <li><a href="recursos.html">Recursos</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero hero-casos">
+    <div class="hero-texto">
+      <h2>Aprende con ejemplos reales</h2>
+      <p>Descubre cuándo el uso de IA es ético y cuándo no lo es.</p>
+    </div>
+  </section>
+
+  <main>
+    <h2>Explora los casos</h2>
+    <div class="cards">
+      <div class="card caso" onclick="mostrarCaso('Usar IA para plagiar trabajos es poco ético, porque no refleja tu aprendizaje.')">
+        <img src="https://cdn-icons-png.flaticon.com/512/2920/2920244.png" alt="Plagio">
+        <h3>Plagio en Tareas</h3>
+        <p>Un mal uso de la IA.</p>
+      </div>
+      <div class="card caso" onclick="mostrarCaso('Usar IA para encontrar fuentes confiables y mejorar tu redacción es un uso responsable.')">
+        <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="Investigación">
+        <h3>Apoyo en la Investigación</h3>
+        <p>Un buen uso de la IA.</p>
+      </div>
+    </div>
+
+    <!-- Modal -->
+    <div id="modal" class="modal">
+      <div class="modal-contenido">
+        <span id="cerrar">&times;</span>
+        <p id="texto-caso"></p>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2025 Portal Ético de IA</p>
+  </footer>
+</body>
+</html>
